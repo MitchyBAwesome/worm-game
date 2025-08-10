@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>Worm — Browser Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="gameWrap">
+        <canvas id="c" width="800" height="480"></canvas>
+        <div class="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Speed: <span id="speed">5</span></div>
+            <div>Length: <span id="length">5</span></div>
+            <div class="small">Controls: Arrow Keys / WASD / Touch — Collect numbers 1–10</div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div class="panel" id="panel">
+            <h2>Worm</h2>
+            <p>Collect numbers (1–10). The worm grows by the number collected. Avoid running into the tail or walls.</p>
+            <button id="startBtn">Start Game</button>
+            <div class="small">Use Arrow Keys, WASD, or swipe to steer.</div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
